@@ -30,6 +30,7 @@ app.use('/api/v1/categories', require('./routes/categories'))
 app.use('/api/v1/auth', require('./routes/auth'))
 app.use('/api/v1/carts', require('./routes/cart'))
 app.use('/api/v1/upload', require('./routes/upload'))
+app.use('/api/v1/messages', require('./routes/messages'))
 
 mongoose.connect('mongodb://localhost:27017/NNPTUD2');
 mongoose.connection.on('connected', function () {
